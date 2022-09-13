@@ -1,2 +1,2 @@
-# mp_high
-MyBatis-Plus进阶
+# mp_advance
+[慕课网 MyBatis-Plus进阶](https://www.imooc.com/learn/1171)
