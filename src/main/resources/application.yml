@@ -11,3 +11,9 @@ logging:
     com.mp.dao: trace
   pattern:
     console: '%p%m%n'
+
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-not-delete-value: 0
+      logic-delete-value: 1

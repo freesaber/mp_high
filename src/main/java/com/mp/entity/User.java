@@ -1,4 +1,6 @@
 package com.mp.entity;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableLogic;
 import lombok.Data;
 import java.time.LocalDateTime;
 
@@ -20,5 +22,7 @@ public class User {
 
     private Integer version;
 
+    @TableLogic
+    @TableField(select = false)
     private Integer deleted;
 }
