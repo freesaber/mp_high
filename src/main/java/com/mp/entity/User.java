@@ -1,4 +1,5 @@
 package com.mp.entity;
+import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableLogic;
 import lombok.Data;
@@ -16,8 +17,10 @@ public class User {
 
     private Long managerId;
 
+    @TableField(fill = FieldFill.INSERT)
     private LocalDateTime createTime;
 
+    @TableField(fill = FieldFill.UPDATE)
     private LocalDateTime updateTime;
 
     private Integer version;
